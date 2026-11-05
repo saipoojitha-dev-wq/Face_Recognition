@@ -1,0 +1,27 @@
+# Face Recognition System — Requirements
+# Install with: py -3 -m pip install -r requirements.txt
+
+# ── Core face recognition (no dlib/C++ compilation needed) ────────────────────
+deepface>=0.0.103          # face detection, alignment, Facenet512 embeddings
+onnxruntime-directml>=1.24.0; platform_system == "Windows"  # Intel/NVIDIA/AMD GPU via DirectML
+onnxruntime>=1.13.0; platform_system != "Windows"          # CPU ONNX backend on other platforms
+
+# ── Image processing ──────────────────────────────────────────────────────────
+opencv-python>=4.8.0       # image I/O and preprocessing
+Pillow>=10.0.0             # PIL image operations
+numpy>=1.25.0              # array math
+
+# ── Dashboard ─────────────────────────────────────────────────────────────────
+streamlit>=1.28.0          # web dashboard
+plotly>=5.18.0             # interactive charts
+pandas>=2.0.0              # data handling
+
+# ── ML utilities ──────────────────────────────────────────────────────────────
+scikit-learn>=1.3.0        # train/test splitting, nearest-neighbour
+
+# ── Benchmarking ──────────────────────────────────────────────────────────────
+psutil>=5.9.0              # CPU / memory monitoring
+
+# ── Optional: GPU support ─────────────────────────────────────────────────────
+# torch>=2.0.0             # GPU detection and CUDA benchmarking
+# torchvision>=0.15.0
