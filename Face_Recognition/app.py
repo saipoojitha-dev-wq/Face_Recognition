@@ -1,12 +1,12 @@
 """
 app.py — Face Recognition System Dashboard (Streamlit)
 6-Tab Application:
-  1. 📊 Dataset Overview
-  2. 🔍 Inspect & Preprocess
-  3. 📝 Register Faces
-  4. 📸 Live Webcam Recognition  ← NEW (shows face name + CPU/GPU perf)
-  5. 🎯 Recognize Face (upload)
-    6. ⚡ Inference Benchmark
+  1.  Dataset Overview
+  2.  Inspect & Preprocess
+  3.  Register Faces
+  4.  Live Webcam Recognition  ← NEW (shows face name + CPU/GPU perf)
+  5.  Recognize Face (upload)
+  6.  Inference Benchmark
 """
 
 import os
